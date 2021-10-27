@@ -17,7 +17,7 @@
 // global variables
 unsigned long last_sampling_time; // unit: ms
 float duty_chg_per_interval; // maximum duty difference per interval
-int toggle_interval, toggle_interval_cnt;
+float toggle_interval, toggle_interval_cnt;
 float pause_time; // unit: sec
 Servo myservo;
 float duty_target, duty_curr;
