@@ -26,7 +26,7 @@ float pause_time; // unit: sec
 float dist_ema;
 Servo myservo;
 float duty_target, duty_curr;
-float x[7] = {79, 130, 167, 198, 224, 246, 271};
+float x[7] = {};
 float y[7] = {100, 150, 200, 250, 300, 350, 400};
 float nd = sizeof(x)/sizeof(float);
 
