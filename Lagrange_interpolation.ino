@@ -84,8 +84,8 @@ void loop() {
   if(millis() < last_sampling_time + INTERVAL) return;
   
   float raw_dist = ir_distance();
-  //float dist_cali = 100 + 300.0 / (b - a) * (raw_dist - a);
-  float dist_cali = Lagrange_interpolation(x,y,raw_dist);
+  float dist_cali = 100 + 300.0 / (b - a) * (raw_dist - a);
+  //float dist_cali = Lagrange_interpolation(x,y,raw_dist);
 
   Serial.print("min:0,max:500,dist:");
   Serial.print(raw_dist);
